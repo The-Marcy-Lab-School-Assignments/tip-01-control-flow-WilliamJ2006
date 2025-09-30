@@ -8,6 +8,20 @@ Below 40 → "Wear a heavy coat, scarf, and boots."
 
 const outfitPicker = (temp) => {
   // ✍️ Write your code here
+  if (temp < 40) {
+    console.log('Wear a heavy coat, scarf, and boots.')
+  } else if (temp >= 40 && temp <= 59) {
+    console.log('Wear a sweater and pants.')
+  } else if (temp >= 60 && temp <= 79) {
+    console.log('Wear jeans and a light jacket.')
+  } else {
+    console.log('Wear shorts and a t-shirt.')
+  }
+  return null;
 };
 
 //Test your function below
+outfitPicker(27);
+outfitPicker(57);
+outfitPicker(64);
+outfitPicker(89);
